@@ -44,7 +44,7 @@ EventManagement/
 
 The website is hosted using GitHub Pages.
 
-[Visit Event Management Website]
+[Visit Event Management Website](https://kuldeepkumar364.github.io/EventManagement/)
 
 ## Developed By
 
