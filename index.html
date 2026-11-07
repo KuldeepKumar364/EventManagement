@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventSphere | College Event Management</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Event<span>Managment.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" id="homeLink">Home</a></li>
+                <li><a href="#events" id="exploreLink">Explore Events</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+                    ☀️ Light Mode
+                </button>
+
+                <a href="#events" class="nav-btn">Explore Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <p class="tagline">YOUR CAMPUS. YOUR EVENTS. YOUR EXPERIENCE.</p>
+
+                <h1>
+                    Discover Your
+                    <span>Campus Event.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover exciting college events, participate in competitions,
+                    connect with people, and create unforgettable memories.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#events" class="primary-btn">Explore Events →</a>
+                    <a href="#about" class="secondary-btn">Learn More</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <h3>50+</h3>
+                        <p>Events</p>
+                    </div>
+
+                    <div>
+                        <h3>10K+</h3>
+                        <p>Participants</p>
+                    </div>
+
+                    <div>
+                        <h3>20+</h3>
+                        <p>Categories</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-card">
+                    <div class="image-overlay">
+                        <p>UPCOMING EXPERIENCE</p>
+                        <h2>Make Moments Count.</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-section" id="events">
+            <p class="tagline">WHAT'S HAPPENING</p>
+
+            <h2>Explore Upcoming Events</h2>
+
+            <p class="section-description">
+                Discover events that match your interests.
+                Something exciting is waiting for you.
+            </p>
+
+            <div class="event-search">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search college events..."
+                >
+            </div>
+
+            <div id="eventContainer"></div>
+        </section>
+
+        <section class="event-details-section" id="eventDetails" hidden>
+            <button class="back-btn" id="backToEvents">
+                ← Back to Events
+            </button>
+
+            <div id="eventDetailsContent"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> EventSphere. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
